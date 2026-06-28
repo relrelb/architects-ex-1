@@ -354,7 +354,7 @@ for step in range(max_steps):
 
     
     # TODO: Implement the training step
-    
+    print("Hello!")
     
     if device_type == "cuda":
         torch.cuda.synchronize() # wait for the GPU to finish work
