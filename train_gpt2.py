@@ -348,6 +348,7 @@ log_file = os.path.join(log_dir, f"log.txt")
 with open(log_file, "w") as f: # open for writing to clear the file
     pass
 
+loss_accum = 0
 for step in range(max_steps):
     t0 = time.time()
     last_step = (step == max_steps - 1)
@@ -355,6 +356,7 @@ for step in range(max_steps):
     
     # TODO: Implement the training step
     print("Hello!")
+
     
     if device_type == "cuda":
         torch.cuda.synchronize() # wait for the GPU to finish work
